@@ -1,17 +1,112 @@
 <!doctype html>
 <html>
-	    <nav style="font-family:impact; text-align:center; font-size:150%;  padding:10px;">
-        <a href="index.html">index</a> 
-        <a href="page_2.html">page2</a>
-        <a href="page_3.html">page3</a>
-        </nav>
 	 
 
 <head>
 <title>World Cup Title Page</title>
+	<style>
+	body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #eee;
+}
+
+.header {
+    height: 100vh;
+    background-image: 
+    linear-gradient(to right bottom, 
+     rgba(76, 216, 255, 0.8),
+     rgba(30, 108, 217, 0.8)),
+     url('https://i1.wp.com/www.funnymeetingbackgrounds.com/wp-content/uploads/2022/08/fifa_world_cup_qatar_2022_by_jafarjeef_df2um59-fullview-1.jpg');
+    
+  background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.brand-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.brand { font-size: 20px; }
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 7.4px;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+  font-size: 14px;
+}</style>
 </head>
 <body>
+			<header class="header">
+		  	<div class="brand-box">
+			<span class="brand"></span>
+		  </div>
 
+		  <div class="text-box">
+			<h1 class="heading-primary">
+			  <span class="heading-primary-main">The world cup</span>
+			  <span class="heading-primary-sub"></span>
+			</h1>
+			
+		  </div>
+			</header>
 
 <div style="background-color:#FFFFFF;text-align:center;width:100%;">
 <h1>Welcome to the World Cup!</h1>
@@ -33,5 +128,5 @@ final game, where the two remaining teams battle it out for the title.</p>
 	
 	<img src="worldcup.gif" width="418" height="498" alt=""/>
 	
-	
-	
+</body>
+</html>
