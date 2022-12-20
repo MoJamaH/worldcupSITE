@@ -5,89 +5,114 @@
 <head>
 <title>World Cup Title Page</title>
 	<style>
-	body {
+            body {
+                background-image: url("")
+            }
+	@import url(https://fonts.googleapis.com/css?family=Lato);
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
 
-		}
+html {
+  font: 1em/1.5 "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
 
-.header {
-    height: 100vh;
-    background-image: 
-    linear-gradient(to right bottom, 
-     rgba(76, 216, 255, 0.8),
-     rgba(30, 108, 217, 0.8)),
-     url('https://i1.wp.com/www.funnymeetingbackgrounds.com/wp-content/uploads/2022/08/fifa_world_cup_qatar_2022_by_jafarjeef_df2um59-fullview-1.jpg');
-    
+body {
+  font-size: 1.3em;
+}
+
+header {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: url(https://images5.alphacoders.com/122/1225580.jpg) center no-repeat;
+  /* Image Credit: Unsplash.me */
   background-size: cover;
-    background-position: top;
-    position: relative;
-
-
+}
+header .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+header h1, header h2 {
+  margin: 0;
+}
+header h2 {
+  text-transform: uppercase;
+  margin-top: -.5em;
+}
+header hgroup {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  border: 5px solid #fff;
+  padding: .5em 3em;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background:#333 center no-repeat;
+  background-size: cover;
+  z-index: 0;
+  opacity: 0;  -webkit-filter: blur(4px);
+}
+img{
+  margin-right:20px
+}
+.site {
+  padding: 20em 0;
+  text-align: center;
+  background-color: #efefef;
+  font-size: .8em;
+  color: #444;
+  position:relative
+}
+.site a {
+  color: #666;
+  text-decoration: none;
+}
+.site a:hover {
+  color: #222;
 }
 
-.brand-box {
-    position: absolute;
-    top: 40px;
-    left: 40px;
+.site nav{
+  position:absolute;
+  top:0;
+  left:0;
+  background:#222;
+  width:100%
 }
-
-.brand { font-size: 20px; }
-
-.text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.site nav a{
+  padding:10px 30px;
+  font-size:1.3em;
+  display:inline-block
 }
-
-.heading-primary {
-    color: #fff;
-    text-transform: uppercase;
-
-    backface-visibility: hidden;
-    margin-bottom: 30px;
+.site nav a:hover{
+  background:#333;
+  color:#fff
 }
-
-.heading-primary-main {
-    display: block;
-    font-size: 26px;
-    font-weight: 400;
-    letter-spacing: 5px;
-}
-
-.heading-primary-sub {
-    display: block;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 7.4px;
-}
-
-.btn:link,
-.btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    border-radius: 100px;
-    transition: all .2s;
-    position: relative;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn-white {
-    background-color: #fff;
-    color: #777;
-  font-size: 14px;
-}</style>
+	</style>
 </head>
 <body>
 			<header class="header">
@@ -104,22 +129,22 @@
 		  </div>
 			</header>
 
-<div style="background-color:#FFFFFF;text-align:center;width:100%;">
-<h1>Welcome to the World Cup!</h1>
+<div style="background-image: ;text-align:center;width:100%;">
+<h1 class="body">Welcome to the World Cup!</h1>
 </div>
+<hr>
 
 
-
-<p>The World Cup is the most prestigious international football tournament, 
+<p style="text-align: center">The World Cup is the most prestigious international football tournament, 
 held every four years. Every country in the world is eligible to compete for 
-the coveted title of World Cup Champion.</p>
+the coveted title of World Cup Champion.
 
-<p>The World Cup is a tournament of 32 teams that compete in group stages and 
+The World Cup is a tournament of 32 teams that compete in group stages and 
 elimination rounds. Each team plays each other in their group, and the two 
 best teams move on to the next round. The tournament culminates in the 
-final game, where the two remaining teams battle it out for the title.</p>
+final game, where the two remaining teams battle it out for the title.
 
-<p>The World Cup is a global event, with millions of viewers around the world 
+	The World Cup is a global event, with millions of viewers around the world 
 	tuning in to watch the games. It is the most-watched sporting event in the </p>
 	
 	
